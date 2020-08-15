@@ -6,179 +6,17 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--for star ratings-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="/resources/demos/style.css"> -->
+<link rel="stylesheet" type="text/css" href="styles.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   
   
 <style>
-.ulClass {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-.liClass {
-  float: left;
-}
-
-.aClass {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.aClass:hover:not(.active) {
-  background-color: #111;
-}
-
-.rightIcon{
-	float:right;
-}
-.socialIcon{
-	padding:5px;
-}
-.grid-container1 {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 10px;
-  padding: 10px;
-}
-
-.grid-container1 > div {
-  border: 1px solid black;
-}
-.bodyPadding{
-	padding-left: 30%;
-	padding-right: 30%;
-}
-
-.checked {
-  color: orange;
-}
-.colorActive{
-	border: 2px solid black;
-}
-.addToCartButton{
-	background-color:#494949;
-	padding:6px;
-	color:white;
-	width:150px;
-}
-.wishlist{
-	background-color: white;
-	float:right;
-	border-style:none;
-	font-size:11px;
-}
-.smallWriting{
-	font-size:11px;
-}
-.grid-container2 {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
-  padding: 10px;
-}
-
-.grid-container2 > div {
-  border: 1px solid black;
-}
-
-.grid-container3 {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 10px;
-  padding: 10px;
-}
-
-.grid-container3 > div {
-  border: 1px solid black;
-}
-.grid-container4 {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-gap: 10px;
-  padding: 10px;
-}
-
-.grid-container4 > div {
-  border: 1px solid black;
-  text-align: center;
-  font-size: 13px;
-}
-
-.grid-container5 {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
-  padding: 10px;
-}
-
-.grid-container5 > div {
-  border: 1px solid black;
-  color:#EDEDED;
-  font-size: 12px;
-}
-
-.grid-container6 {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 10px;
-  padding: 10px;
-}
-
-.grid-container6 > div {
-  border: 1px solid black;
-}
-.moreProducts{
-	background-color:#EDEDED;
-}
-.aClassF{
-	color:#EDEDED;
-	text-decoration: none;
-}
-@media (max-width: 1300px) {
-  .bodyPadding{
-	padding-left: 20%;
-	padding-right: 20%;
-  }
-}
-@media (max-width: 500px) {
- .bodyPadding{
-	padding-left: 10%;
-	padding-right: 10%;
-  }
- .grid-container1 {
-  display: grid;
-  grid-template-columns: auto;
-  grid-gap: 10px;
-  padding: 10px;
-}
-.grid-container5 {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 10px;
-  padding: 10px;
-}
-}
-@media screen and (max-width: 600px) {
-  li {
-    float: none;
-  }
-  .rightIcon {
-	float: none;
-  }
-}
 
 </style>
+
 </head>
+
 <body>
 <!--for above navigation bar-->
 <div class="bodyPadding">
@@ -188,16 +26,16 @@
 </div>
 <!-- navigation bar-->
 <ul class="ulClass">
-
-  <li class="liClass"><a class="aClass"><input type="text" placeholder="Search.." name="search"> </a></li>
+<div class="bodyPadding">
   <li class="liClass"><a class="aClass"><button type="submit"><i class="fa fa-search"></i></button></a></li>
   <li class="liClass"><a class="aClass" href="#">Home</a></li>
   <li class="liClass"><a class="aClass" href="#">Campaign</a></li>
   <li class="liClass"><a class="aClass" href="#">Blog</a></li>
   <li class="liClass"><a class="aClass" href="#">Store</a></li>
   <li class="liClass"><a class="aClass" href="#">Contacts</a></li>
-  <li class="rightIcon"><a class="aClass" href="#"><i class="fa fa-heart"></i></a></li>
   <li class="rightIcon"><a class="aClass" href="#"><i class="fa fa-shopping-cart"></i></a></li>
+  <li class="rightIcon"><a class="aClass" href="#"><i class="fa fa-heart"></i></a></li>
+</div>
 </ul>
 <div class="bodyPadding">
 <p>Store/ Single Product</p>
@@ -295,11 +133,11 @@
     Information about something
     </p>
   </div>
-
+<!--For review space-->
 <p>Leave a review:</p>
 <p>Rate our product</p>
 
-
+<!--sends me email-->
 <form action="mailto:c.sadaaf@gmail.com" method="post" enctype="text/plain">
 
 <input style="width:48%;" type="text" name="name" placeholder="Name">
@@ -310,6 +148,7 @@
 <br><br>
 </div>
 </div>
+<!--for more products space -->
 <div class="moreProducts">
 	<div class="bodyPadding">
 	<br><br><br>
@@ -323,6 +162,7 @@
 	</div>
 </div>
 <br><br><br>
+<!--footer-->
 <div style="background-color:#333;">
 	<div class="bodyPadding">
 		<div class="grid-container5">
@@ -376,10 +216,11 @@
 	</div>
 	
 </div>
-
+<!--below footer-->
 <div class="bodyPadding">
 	<p style="font-size:8px;">&#xa9; 2016 - Lenox Multi-Concept Template<span style="float:right;">Created By Torbara</span></p>
 </div>
+<!-- for the reviews and information space, used jquery's accordian function-->
 <script>
   $( function() {
     $( "#accordion" ).accordion();

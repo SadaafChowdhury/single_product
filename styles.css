@@ -1,0 +1,154 @@
+
+/*For navigation bar*/
+.ulClass {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.liClass {
+  float: left;
+}
+
+.aClass {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.aClass:hover:not(.active) {
+  background-color: #111;
+}
+
+.rightIcon{
+	float:right;
+}
+.socialIcon{
+	padding:5px;
+}
+/*For Products space*/
+.grid-container1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+/*For padding of entire html*/
+.bodyPadding{
+	padding-left: 30%;
+	padding-right: 30%;
+}
+/*For coloring of stars*/
+.checked {
+  color: orange;
+}
+/*For color boxes when active*/
+.colorActive{
+	border: 2px solid black;
+}
+.addToCartButton{
+	background-color:#494949;
+	padding:6px;
+	color:white;
+	width:150px;
+}
+.wishlist{
+	background-color: white;
+	float:right;
+	border-style:none;
+	font-size:11px;
+}
+/*For smaller characters*/
+.smallWriting{
+	font-size:11px;
+}
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container4 {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container4 > div {
+  text-align: center;
+  font-size: 13px;
+}
+
+.grid-container5 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container5 > div {
+  color:#EDEDED;
+  font-size: 12px;
+}
+
+.grid-container6 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+
+.moreProducts{
+	background-color:#EDEDED;
+}
+/*For links in footer*/
+.aClassF{
+	color:#EDEDED;
+	text-decoration: none;
+}
+@media (max-width: 1300px) {
+  .bodyPadding{
+	padding-left: 20%;
+	padding-right: 20%;
+  }
+}
+@media (max-width: 500px) {
+ .bodyPadding{
+	padding-left: 10%;
+	padding-right: 10%;
+  }
+ .grid-container1 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.grid-container5 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+}
+@media screen and (max-width: 600px) {
+  li {
+    float: none;
+  }
+  .rightIcon {
+	float: none;
+  }
+}
