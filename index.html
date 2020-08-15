@@ -6,6 +6,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--for star ratings-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css"> -->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  
 <style>
 ul {
   list-style-type: none;
@@ -83,6 +90,31 @@ li a:hover:not(.active) {
 .grid-container2 > div {
   border: 1px solid black;
 }
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container3 > div {
+  border: 1px solid black;
+}
+.grid-container4 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container4 > div {
+  border: 1px solid black;
+}
+
+.moreProducts{
+	background-color:#EDEDED;
+}
 @media (max-width: 1300px) {
   .bodyPadding{
 	padding-left: 20%;
@@ -105,9 +137,9 @@ li a:hover:not(.active) {
 
 </style>
 </head>
-<body class="bodyPadding">
+<body>
 <!--for above navigation bar-->
-<div>
+<div class="bodyPadding">
 	<p><b><span style="font-size: 18px;">Lenox</span></b> <span style="font-size: 10px;">Store</span> 
 	<span style="float:right;"><i class="fa fa-twitter socialIcon"></i>
 	<i class="fa fa-google socialIcon"></i><i class="fa fa-facebook-f socialIcon"></i></span></p>
@@ -125,7 +157,7 @@ li a:hover:not(.active) {
   <li class="rightIcon"><a href="#"><i class="fa fa-heart"></i></a></li>
   <li class="rightIcon"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
 </ul>
-
+<div class="bodyPadding">
 <p>Store/ Single Product</p>
 
 <h2>Single Product</h2>
@@ -181,6 +213,78 @@ li a:hover:not(.active) {
 	<i class="fa fa-pinterest socialIcon"></i> <i class="fa fa-instagram socialIcon"></i> <i class="fa fa-youtube-play socialIcon"></i></p>
   </div>
 </div>
+
+<!--The riviews and information-->
+
+<div id="accordion">
+  
+  <h4>Reviews</h4>
+  <div>
+    <div class="grid-container3">
+	  <div><i style="background-color:#C0C0C0; color:white;font-size:36px" class="fa fa-user"></i></div>
+	  <div><p>Milana Frankone <span style="float:right;"><span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span></span></p>
+			<p>Jul 26, 2016| 2:00pm</p>
+			<p>Whatever drinking vinegar disrupt, echo banjo skateboard four dollar toast flexitarian
+			ethical 3 wwolf moo fap iirony typewriter tacos. Swag cardigan beard, pabst plaid street art portland.</p>
+	</div>
+	
+  </div>
+  <div class="grid-container3">
+	  <div><i style="background-color:#C0C0C0; color:white;font-size:36px" class="fa fa-user"></i></div>
+	  <div><p>John Doe <span style="float:right;"><span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star"></span></span></p>
+			<p>Jul 26, 2016| 2:00pm</p>
+			<p>Fanny pack actually roof party, shabby chic fashion yuccie chambay single-originWhatever drinking vinegar disrupt,
+			echo banjo skateboard four dollar toast flexitarianethical 3 wwolf moo fap iirony typewriter tacos.
+			Swag cardigan beard, pabst plaid street art portland.</p>
+	</div>
+	</div>
+</div>
+<h4>Information</h4>
+  <div>
+    <p>
+    Information about something
+    </p>
+  </div>
+
+<p>Leave a review:</p>
+<p>Rate our product</p>
+
+
+<form action="mailto:c.sadaaf@gmail.com" method="post" enctype="text/plain">
+
+<input style="width:48%;" type="text" name="name" placeholder="Name">
+<input style="width:49%;" type="text" name="mail" placeholder="Email"><br><br>
+<input type="text" name="message" style="width:99%;" placeholder="Message"><br><br>
+<input type="submit" value="Send" style="width:100%; background-color:#5B5B5B; color: white;">
+</form>
+<br><br>
+</div>
+
+<div class="moreProducts bodyPadding">
+	<div class="grid-container4">
+	  <div><img style="width:100%;" src="images/image2.jpg" alt="Product"></div>
+	  <div><img style="width:100%;" src="images/image2.jpg" alt="Product"></div>
+	  <div><img style="width:100%;" src="images/image2.jpg" alt="Product"></div>  
+	  <div><img style="width:100%;" src="images/image2.jpg" alt="Product"></div>
+	</div>
+</div>
+<br><br><br>
+
+<script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  
+  
+</script>
 
 </body>
 </html>
