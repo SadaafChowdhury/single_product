@@ -55,6 +55,34 @@ li a:hover:not(.active) {
 .checked {
   color: orange;
 }
+.colorActive{
+	border: 2px solid black;
+}
+.addToCartButton{
+	background-color:#494949;
+	padding:6px;
+	color:white;
+	width:150px;
+}
+.wishlist{
+	background-color: white;
+	float:right;
+	border-style:none;
+	font-size:11px;
+}
+.smallWriting{
+	font-size:11px;
+}
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container2 > div {
+  border: 1px solid black;
+}
 @media (max-width: 1300px) {
   .bodyPadding{
 	padding-left: 20%;
@@ -105,8 +133,13 @@ li a:hover:not(.active) {
 <!--for Product-->
 <div class="grid-container1">
   <div>
-	<img src="images/image1.jpg" alt="Product">
-
+	<img style="width:100%;" src="images/image1.jpg" alt="Product">
+	<div class="grid-container2">
+	  <div><img style="width:100%;" src="images/image2.jpg" alt="Product"></div>
+	  <div><img style="width:100%;" src="images/image2.jpg" alt="Product"></div>
+	  <div><img style="width:100%;" src="images/image2.jpg" alt="Product"></div>  
+	  <div><img style="width:100%;" src="images/image2.jpg" alt="Product"></div>
+	</div>
   </div>
   <div>
 	<h2>Man bun helvetica biodiesel</h2>
@@ -119,7 +152,33 @@ li a:hover:not(.active) {
 	<span style="float:right;font-size:10px;">(2 customer reviews)</span></p>
 	<p>Ramps cold-pressured listicle, chambray kale chips try-hard squid wayferes
 	for venmo vinyl. Aesthetic photo booth yr leggings authentic</p>
+	<hr style="width:25%;float:left;"><br>
+	<p>Color:</p>
+		<button style="background-color:#DCDCDC; color:#DCDCDC;" class="colorActive">G</button>
+		<button style="background-color:#FFA9A9; color:#FFA9A9;">G</button>
+		<button style="background-color:white; color: white;">G</button>
+		<button style="background-color:#828282; color:#828282;">G</button>
+		
+	<p>Size:<a href="#" <span style="float:right;font-size:10px; color:#848484;"><u>View Size guide</u></span>></a></p>
+		<button style="background-color:white;" class="colorActive">S</button>
+		<button style="background-color:white;" class="colorActive">M</button>
+		<button style="background-color:white;"class="colorActive">L</button>
+		
+	<p>Quantity:</p>
+	<form action="/action_page.php">
+	  <input type="number" id="quantity" name="quantity" placeholder="1" min="1" max="100"><br><br>
+	</form>
+	<button class="addToCartButton"><i class="fa fa-shopping-cart"></i>  Add to cart</button>
+	<button class="wishlist"><i class="fa fa-heart"></i>Add to wishlist</button><br><br>
 	
+	<hr style="width:25%;float:left;"><br>
+	
+	<p class="smallWriting">Sku: 123456789</p>
+	<p class="smallWriting">Category: Gifts</p>
+	<p class="smallWriting">Tags: Tunks, Blogs, Print, Books, Gift</p>
+	
+	<p class="smallWriting">Share: <i class="fa fa-twitter socialIcon"></i> <i class="fa fa-facebook-f socialIcon"></i> 
+	<i class="fa fa-pinterest socialIcon"></i> <i class="fa fa-instagram socialIcon"></i> <i class="fa fa-youtube-play socialIcon"></i></p>
   </div>
 </div>
 
