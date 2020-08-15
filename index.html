@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Single Product</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.rightIcon{
+	float:right;
+}
+@media screen and (max-width: 600px) {
+  li {
+    float: none;
+  }
+  .rightIcon {
+	float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a><input type="text" placeholder="Search.." name="search"> </a></li>
+  <li><a><button type="submit"><i class="fa fa-search"></i></button></a></li>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Campaign</a></li>
+  <li><a href="#">Blog</a></li>
+  <li><a href="#">Store</a></li>
+  <li><a href="#">Contacts</a></li>
+  <li class="rightIcon"><a href="#"><i class="fa fa-heart"></i></a></li>
+  <li class="rightIcon"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+</ul>
+
+</body>
+</html>
