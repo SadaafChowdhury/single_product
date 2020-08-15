@@ -2,12 +2,11 @@
 <html>
 <head>
 <title>Single Product</title>
-<!-- link for icon-->
+<!--for icons-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<!--for star ratings-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-
-<!-- css for navigation-->
 ul {
   list-style-type: none;
   margin: 0;
@@ -35,6 +34,38 @@ li a:hover:not(.active) {
 .rightIcon{
 	float:right;
 }
+.socialIcon{
+	padding:5px;
+}
+.grid-container1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container1 > div {
+  border: 1px solid black;
+}
+.bodyPadding{
+	padding-left: 30%;
+	padding-right: 30%;
+}
+
+.checked {
+  color: orange;
+}
+@media (max-width: 1300px) {
+  .bodyPadding{
+	padding-left: 20%;
+	padding-right: 20%;
+  }
+}
+@media (max-width: 500px) {
+ .bodyPadding{
+	padding-left: 10%;
+	padding-right: 10%;
+  }
 @media screen and (max-width: 600px) {
   li {
     float: none;
@@ -43,14 +74,16 @@ li a:hover:not(.active) {
 	float: none;
   }
 }
+
 </style>
 </head>
-<body>
-
+<body class="bodyPadding">
+<!--for above navigation bar-->
 <div>
-	<p><b><span style="font-size: 18px;">Lenox</span></b> <span style="font-size: 10px;">Store</span></p>
+	<p><b><span style="font-size: 18px;">Lenox</span></b> <span style="font-size: 10px;">Store</span> 
+	<span style="float:right;"><i class="fa fa-twitter socialIcon"></i>
+	<i class="fa fa-google socialIcon"></i><i class="fa fa-facebook-f socialIcon"></i></span></p>
 </div>
-
 <!-- navigation bar-->
 <ul>
 
@@ -64,6 +97,31 @@ li a:hover:not(.active) {
   <li class="rightIcon"><a href="#"><i class="fa fa-heart"></i></a></li>
   <li class="rightIcon"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
 </ul>
+
+<p>Store/ Single Product</p>
+
+<h2>Single Product</h2>
+
+<!--for Product-->
+<div class="grid-container1">
+  <div>
+	<img src="images/image1.jpg" alt="Product">
+
+  </div>
+  <div>
+	<h2>Man bun helvetica biodiesel</h2>
+	<p>
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star"></span>
+	<span class="fa fa-star"></span>
+	<span style="float:right;font-size:10px;">(2 customer reviews)</span></p>
+	<p>Ramps cold-pressured listicle, chambray kale chips try-hard squid wayferes
+	for venmo vinyl. Aesthetic photo booth yr leggings authentic</p>
+	
+  </div>
+</div>
 
 </body>
 </html>
